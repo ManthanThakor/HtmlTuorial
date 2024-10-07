@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <p title="I'm a tooltip">This is a paragraph.</p>
+    <p title="AboutW3Schools">without quotes</p>
+    <p style="text-align: center">==========================================</p>
+    <div><h1 style="text-align: center">HTML Formatting Elements</h1></div>
+    <p style="text-align: center">==========================================</p>
+
+    <b>This text is bold</b>
+    <strong>This text is important!</strong>
+    <i>This text is italic</i>
+    <em>This text is emphasized</em>
+    <small>This is some smaller text.</small>
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <p>My favorite color is <del>blue</del> red.</p>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+    <p>This is <sub>subscripted</sub> text.</p>
+    <p>This is <sup>superscripted</sup> text.</p>
+    <p style="text-align: center">==========================================</p>
+    <div><h1 style="text-align: center">HTML Table</h1></div>
+    <p style="text-align: center">==========================================</p>
+    <table style="width: 100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+    <h2>Cell that spans two rows</h2>
+    <p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+    <table style="width: 100%">
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+      </tr>
+    </table>
+
+    <p style="text-align: center">==========================================</p>
+    <div><h1 style="text-align: center">HTML List</h1></div>
+    <p style="text-align: center">==========================================</p>
+
+    <h2>An unordered HTML list</h2>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <h2>Ordered List with Numbers</h2>
+
+    <ol type="1">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+    <h2>A Description List</h2>
+
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+
+    <p style="text-align: center">==========================================</p>
+    <div><h1 style="text-align: center">Html Form</h1></div>
+    <p style="text-align: center">==========================================</p>
+    <form action="/submit_form.php" method="POST">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor" /><br />
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female<br />
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobbies" value="sports" /> Sports
+        <input type="checkbox" name="hobbies" value="music" /> Music<br />
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="usa">USA</option></select
+        ><br />
+        <label for="colors">Select your favorite colors:</label>
+        <select id="colors" name="colors[]" multiple size="2">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+        <label for="browser">Choose your browser:</label>
+        <input list="browsers" id="browser" name="browser" />
+        <datalist id="browsers">
+          <option value="Chrome"></option>
+          <option value="Firefox"></option>
+          <option value="Safari"></option>
+          <option value="Opera"></option>
+          <option value="Edge"></option>
+        </datalist>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
